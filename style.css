@@ -18,3 +18,73 @@ body{
     font-weight: 300;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85, 85, 85)
+}
+
+/* Transition */
+
+a, .btn {
+    transition: all 300ms ease;
+    
+}
+
+/* Desktop Nav */
+
+nav, .nav-links{
+    display: flex; /*decides how things are arranged on page*/
+    caret-color: transparent; /* hides the blinking cursor */
+}
+
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh; /*whatever height of view screen is, the nav now takes 17% of it*/
+}
+
+.nav-links{
+    gap: 2rem; /*between elements that are flexed*/
+    list-style: none; /*remove bullet points*/
+    font-size: 1.5rem;
+
+}
+
+a {
+    color: black;
+    position: relative;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a::after{
+    content: "";
+    position: absolute;
+    /* put star to left of nav item*/
+    left: -1.2rem;
+    bottom: -0.1rem;
+    transform: translateX(-50%);
+    transform: translateY(-50%) rotate(-90deg);
+    width: 1rem;
+    height: 1rem;
+    background-image: url('assets/star-by-christu.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+    transition: opacity 300ms ease, transform 700ms ease;
+}
+
+a:hover {
+    color: rgb(107, 107, 107);
+    
+}
+
+a:hover::after {
+    opacity: 1;
+    transform: translateY(-50%) rotate(0deg); /*twist star animation*/
+}

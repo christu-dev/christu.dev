@@ -13,14 +13,41 @@
             <div class = "logo"> Chris Tu </div> 
             <div>
                 <ul class = "nav-links">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about">About
+                            <span class="severance-effect"></span>
+                        </a></li>
+
+                        <li><a href="#projects">Projects
+                            <span class="severance-effect"></span>
+                        </a></li>
+                        <li><a href="#experience">Experience
+                            <span class="severance-effect"></span>
+                        </a></li>
+                        <li><a href="#contact">Contact
+                            <span class="severance-effect"></span>
+                        </a></li>
                 </ul>
             </div>
-            </div>
         </nav>
+
+        <nav id="hamburger-nav">
+            <div class = "logo"> Chris Tu </div> 
+            <div class = "hamburger-menu">
+                <div class= "hamberguer-icon" onlcick="toggleMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class= "menu-links">
+                    <li><a href="#about" onlcick="toggleMenu">About</a></li>
+                    <li><a href="#projects" onlcick="toggleMenu">Projects</a></li>
+                    <li><a href="#experience" onlcick="toggleMenu">Experience</a></li>
+                    <li><a href="#contact" onlcick="toggleMenu">Contact</a></li>
+                </div>
+            </div>
+
+        </nav>
+
 
         <script src="script.js"></script>
     </body>

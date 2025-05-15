@@ -99,9 +99,8 @@ a::after{
     transition: transform 0.5s ease;
   }
   
-  a:hover .severance-effect::after,
-  a:focus .severance-effect::after {
-    transform: scaleX(1);
+  a:hover .severance-effect::after {
+    transform: scaleX(1.1);
   }
 
 
